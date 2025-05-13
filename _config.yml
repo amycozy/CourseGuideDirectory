@@ -1,0 +1,20 @@
+# Site settings
+title: Course Guide Directory
+description: A central hub for all course study guides
+url: "https://amycozy.github.io/CourseGuideDirectory"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore

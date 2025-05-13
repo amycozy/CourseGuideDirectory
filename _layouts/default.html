@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1 class="site-title">{{ site.title }}</h1>
+            <div class="disclaimer">
+                <p><strong>DISCLAIMER:</strong> These guides were not written by a lawyer and do not constitute legal advice. The content is intended for educational purposes only and should not be relied upon as authoritative legal guidance. Always consult with a qualified attorney for advice on specific legal matters.</p>
+            </div>
+        </header>
+
+        <main class="site-content">
+            {{ content }}
+        </main>
+
+        <footer class="site-footer">
+            <p>Last Updated: {{ site.time | date: '%B %d, %Y' }}</p>
+            <p>© {{ site.time | date: '%Y' }} Course Guide Directory</p>
+        </footer>
+    </div>
+</body>
+</html>
