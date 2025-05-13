@@ -1,8 +1,8 @@
 # Site settings
 title: Course Guide Directory
 description: A central hub for all course study guides
-url: "https://amycozy.github.io/CourseGuideDirectory"
-baseurl: ""
+url: "https://amycozy.github.io"
+baseurl: "/CourseGuideDirectory"
 
 # Build settings
 markdown: kramdown
